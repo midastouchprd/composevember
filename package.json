@@ -1,10 +1,13 @@
 {
-  "name": "landing-page-template",
+  "name": "composevember",
   "version": "1.0.0",
-  "description": "template for no server landing pages",
+  "description": "composevember",
   "main": "index.html",
-  "repository": "https://github.com/midastouchprd/landing-page-template.git",
+  "repository": "https://github.com/midastouchprd/composevember.git",
   "author": "Oluwatosin Awofeso <midastouchproductions@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "deploy": "aws s3 sync . s3://composevember.com --exclude \"*\" --include \"*.css\"  --include \"*.html\" --include \"*.png\""
+  }
 }

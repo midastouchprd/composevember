@@ -1,8 +1,40 @@
-body {
-  background-color: pink;
+.flex {
+  display: flex !important;
+}
+
+.column {
+  flex-direction: column !important;
+}
+
+.center {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.full {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.full-vw {
   width: 100vw;
+}
+
+.full-vh {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.image-container {
+  background-image: url("./Hero Image.png");
+  background-size: cover;
+}
+
+.prompts-container {
+  background-image: url("./PROMPTS.png");
+  background-size: contain;
+  background-repeat: none;
 }
